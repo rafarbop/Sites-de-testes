@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Web App</title>
+    <style>
+      body,html{
+          width:100%;
+          height:100%;
+          margin: 0;
+          padding: 0;
+          background-color: #eeee88;
+      }
+      div#container{
+          margin: 0;
+          padding: 0;
+          overflow:hidden;
+          width: 100%;
+          height:80%;
+      }
+      div#quad10x10{
+          margin: 0;
+          padding: 0;
+          width:10px;
+          height:10px;
+          background-color: red;
+          animation-duration: 6s;
+          animation-name: ladoalado;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+      }
+      @keyframes ladoalado {
+          0%{
+              margin-left: 75%;
+              margin-top: 50%;
+              width:10px;
+              height:10px
+          }
+          33%{
+              margin-left: 0%;
+              margin-top: 0%;
+              width:20px;
+              height:10px
+          }
+          66%{
+              margin-left: 0%;
+              margin-top: 100%;
+              width:20px;
+              height:20px
+          }
+          100%{
+              margin-left: 75%;
+              margin-top: 50%;
+              width:10px;
+          }
+      }
+      div#btn0{
+          width: 100%;
+          text-align: center;
+      }
+      a{
+          background-color: #99cccc;
+          color: #0088ff;
+          outline: 2px solid #dddddd;
+          border: 3px solid #99aaaa;
+          padding: 4px;
+          font-family: sans-serif;
+          font-weight: bold;
+          text-decoration: none;
+      }
+      #btn1{
+          display: none;
+          position:absolute;
+          top:90%;
+          left:50%;
+          transform: translate(-50%, -50%);
+      }
+      #btn2{
+          display: none;
+          position:absolute;
+          top:90%;
+          left:0%;
+          transform: translate(0%, -50%);
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="quad10x10">
+      </div>
+    </div>
+    <div id="btn0">
+    <a id="continuar" href="#" onclick="mudar()">CONTINUAR</a>
+    </div>
+    <div id="btn1">
+    <a href=# onclick="window.location.reload()">VOLTAR</a>
+    </div>
+    <div id="btn2">
+    <a href="pag2.html" >Página 2</a>
+    </div>
+    <script>
+    
+    function mudar(){
+        document.getElementById("container").innerHTML = '<div style="text-align: center; width:100%; color: red"><p>Seja Bem Vindo ao Melhor Aplicativo da Internet</p>'
+        document.getElementById("continuar").style.display = "none";
+        document.getElementById("btn1").style.display = "inherit";
+        document.getElementById("btn2").style.display = "inherit"
+    }
+    
+    </script>
+  </body>
+</html>
