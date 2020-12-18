@@ -83,6 +83,13 @@
           left:0%;
           transform: translate(0%, -50%);
       }
+      #btn3{
+          display: none;
+          position:absolute;
+          top:90%;
+          right:0%;
+          transform: translate(0%, -50%);
+      }
       
     </style>
   </head>
@@ -101,13 +108,17 @@
     <div id="btn2">
     <a href="/Sites-de-testes/pag2.html" >Página 2</a>
     </div>
+    <div id="btn3">
+    <a href="/Sites-de-testes/pag3.html" >Página 3</a>
+    </div>
     <script>
     
     function mudar(){
         document.getElementById("container").innerHTML = '<div style="text-align: center; width:100%; color: red"><p>Seja Bem Vindo ao Melhor Aplicativo da Internet</p>'
         document.getElementById("continuar").style.display = "none";
         document.getElementById("btn1").style.display = "inherit";
-        document.getElementById("btn2").style.display = "inherit"
+        document.getElementById("btn2").style.display = "inherit";
+        document.getElementById("btn3").style.display = "inherit";
     }
     
     </script>
