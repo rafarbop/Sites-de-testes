@@ -55,7 +55,11 @@
               width:10px;
           }
       }
-      div#btn0{
+      #btncor{
+          width: 100%;
+          text-align: center;
+      }
+      #btn0{
           width: 100%;
           text-align: center;
       }
@@ -90,6 +94,42 @@
           right:0%;
           transform: translate(0%, -50%);
       }
+      #corverde{
+          position:absolute;
+          top:75%;
+          left:25%;
+          transform: translate(-50%, -50%);
+          color:white;
+          background-color: darkgreen;
+          padding: initial;
+          font-family: sans-serif;
+          font-weight: normal;
+          border: initial;
+      }
+      #corpadrao{
+          position:absolute;
+          top:75%;
+          left:50%;
+          transform: translate(-50%, -50%);
+          color:white;
+          background-color: red;
+          padding: initial;
+          font-family: sans-serif;
+          font-weight: normal;
+          border: initial;
+      }
+      #corazul{
+          position:absolute;
+          top:75%;
+          left:75%;
+          transform: translate(-50%, -50%);
+          color:white;
+          background-color: darkblue;
+          padding: initial;
+          font-family: sans-serif;
+          font-weight: normal;
+          border: initial;
+      }
       
     </style>
   </head>
@@ -98,6 +138,11 @@
     <div id="container">
       <div id="quad10x10">
       </div>
+    </div>
+    <div id="btncor">
+    <a id="corverde" href="#" >Cor Verde</a>
+    <a id="corpadrao" href="" onclick="mudarCorpadrao()">Cor Padrão</a>
+    <a id="corazul" href="" onclick="mudarCorAzul()">Cor Azul</a>
     </div>
     <div id="btn0">
     <a id="continuar" href="#" onclick="mudar()">CONTINUAR</a>
@@ -119,6 +164,10 @@
         document.getElementById("btn1").style.display = "inherit";
         document.getElementById("btn2").style.display = "inherit";
         document.getElementById("btn3").style.display = "inherit";
+    }
+    
+    document.getElementById("corverde").onclick = function(){
+      document.getElementById("#quad10x10").style.backgroundColor = "#00aa00";
     }
     
     </script>
