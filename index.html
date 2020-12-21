@@ -98,7 +98,7 @@
           left:25%;
           transform: translate(-50%, -50%);
           color:white;
-          background-color: darkgreen;
+          background-color: #006400;
           padding: initial;
           font-family: sans-serif;
           font-weight: normal;
@@ -122,7 +122,7 @@
           left:75%;
           transform: translate(-50%, -50%);
           color:white;
-          background-color: darkblue;
+          background-color: #00008b;
           padding: initial;
           font-family: sans-serif;
           font-weight: normal;
@@ -138,9 +138,9 @@
       </div>
     </div>
     <div id="btncor">
-    <a id="corverde" href="#" >Cor Verde</a>
-    <a id="corpadrao" href="" onclick="mudarCorpadrao()">Cor Padrão</a>
-    <a id="corazul" href="" onclick="mudarCorAzul()">Cor Azul</a>
+    <button id="corverde" class="novacor" value="#006400" >Cor Verde</>
+    <button id="corpadrao" class="novacor" value="#aa0000" >Cor Padrão</>
+    <button id="corazul" class="novacor" value="#00008b" >Cor Azul</button>
     </div>
     <div id="btn0">
     <a id="continuar" href="#" onclick="mudar()">CONTINUAR</a>
@@ -159,13 +159,19 @@
     function mudar(){
         document.getElementById("container").innerHTML = '<div style="text-align: center; width:100%; color: red"><p>Seja Bem Vindo ao Melhor Aplicativo da Internet</p>'
         document.getElementById("continuar").style.display = "none";
+        document.getElementById("btncor").style.display = "none";
         document.getElementById("btn1").style.display = "inherit";
         document.getElementById("btn2").style.display = "inherit";
         document.getElementById("btn3").style.display = "inherit";
     }
     
-    document.getElementById("corverde").onclick = function(){
-      document.getElementById("#quad10x10").style.backgroundColor = "#00aa00";
+    var alterarCor = document.querySelectorAll(".novacor")
+
+    for (let k = 0;k < alterarCor.length;k++){
+        console.log(alterarCor[k]);
+        alterarCor[k].onclick = function(e){
+            document.getElementById("quad10x10").style.backgroundColor = e.target.value;
+        }
     }
     
     </script>
