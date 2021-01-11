@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes Diversos</title>
+    <style>
+        :root{
+            --grad0:0deg,#00a08066,#00a080aa,#00a08066;
+        }
+        body{
+            background-color: #2266dd44;
+        }
+        header{
+            background-image: linear-gradient(var(--grad0));
+            background-image: -webkit-linear-gradient(var(--grad0));
+            padding: 4vh 4vw;
+            margin-bottom: 2vw;
+        }
+        header>h1{
+            text-align: center;
+            font: 600 26pt Arial;
+            color: #2266dd;
+            text-shadow: 1px 1px 5px gray;
+        }
+        div#elemento-teste{
+            width: 400px;
+            height: 400px;
+            background-color: #2266dd;
+            margin: 0 auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alterando a Borda de um elemento com Cotrole HTML</h1>
+    </header>
+    <section>
+        <div id=container-elemento>
+            <div id="elemento-teste"></div>
+        </div>
+        <form>
+            <input type="range" name="radius" id="tamanho-borda-radius" min=0 max=200>
+        </form>
+        <div id="mostrar-valor"></div>
+    </section>
+
+    <script>
+        var range = document.getElementById("tamanho-borda-radius")
+        range.addEventListener('input',function(){
+            document.getElementById("mostrar-valor").innerHTML = this.value
+            document.getElementById('elemento-teste').style.borderRadius = this.value + 'px'
+        })
+        
+    </script>    
+</body>
+</html>
