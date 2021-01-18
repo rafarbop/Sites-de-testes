@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Configuração Inicial de Linux Geral para Rafael Bruno</title>
+		<link rel="stylesheet" type="text/css" href="../assets/css/estilo-meulinux.css">
+	</head>
+
+	<body>
+		<header>
+			<div id="sessaotitulo">
+				<h1>Programas e Configurações de um Linux Personalizado</h1>
+				<h2>Verificação de uma instalação personalizada e completa com os recursos e programas mais usados e utéis!</h2>
+			</div>
+		</header>
+		<nav>
+			<ul id="menu">
+				<li><a href="">Página Inicial</a></li>
+				<li><a href="">Sobre o SITE!</a></li>
+			</ul>
+		</nav>
+
+		<section id="conteudo">
+			<div>
+				<h3>1 - Após a instalação, dar o primeiro boot e verificar se o sistema carregou e logou!</h3>
+				<h4>Configurações do Sistema Pós-instalação:</h4>
+				<form>
+					<input type="checkbox" name="Ok"> - Verificar a instalação de pacote de idiomas adicional para PT-BR.<br/>
+					<input type="checkbox" name="Ok"> - Configurar Gerenciamento de Energia.<br/>
+					<input type="checkbox" name="Ok"> - Verificar uso de pacotes Snap e Flatpak e configurar para não atualizar automaticamente.<br/>
+					<input type="checkbox" name="Ok"> - Verificar ou Instalar monitor do sistema e de processos.<br/>
+					<input type="checkbox" name="Ok"> - Usar Wallpapers e Icones Próprios Salvos(Opcional).<br/>
+
+				<h4>Utilitários para Sistema ou Configuração:</h4>
+					<input type="checkbox" name="Ok"> - Instalar Gerenciador de Pacotes Synaptic.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Gparted - Particionador de Disco.<br/>
+					<input type="checkbox" name="Ok"> - Instalar impressora em pdf - printer-driver-cups-pdf.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Impressora HP Ink Advantage 2676 (ou Epson) e driver, se necessário.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Analisador de uso de Disco - Baobab.<br/>
+					<input type="checkbox" name="Ok"> - Programa Stacer: Linux System Optimizer and Monitoring.<br/>
+
+				<h4>Programas Internet:</h4>
+					<input type="checkbox" name="Ok"> - Instalar Navegador Firefox e configurar sincronização.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Navegador chromium (ou chrome), configurar sincronização.<br/>
+					<input type="checkbox" name="Ok"> - Instalar pacotes de idiomas do chromium, se necessário - chromium-l10n.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Bloqueador de anúncios - chromium-ublock-origin.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Aplicativos do Google através de atalhos do chrome-ium (Google Drive, Youtube, Fotos).<br/>
+					<input type="checkbox" name="Ok"> - Configurar Google Drive para editar e usar arquivos de modo sem conexão(Offline).<br/>
+					<input type="checkbox" name="Ok"> - Instalar Atalhos do Chrome-ium do Netflix - Amazon Prime Video - WhastApp.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Cliente torrent qBittorrent ou Deluge.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Gerenciador de Downloads uGet.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Dropbox para sincronizar pastas remotas do Desktop e Download.<br/>
+
+				<h4>Programas Produção e Trabalho:</h4>
+					<input type="checkbox" name="Ok"> - Instalar ePass2003-Castle: Driver para certificado digital Soluti.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Java Oracle: Necessário para usar o terminal HOD da Serpro(SIAFI).<br/>
+					<input type="checkbox" name="Ok"> - Instalar Terminal HOD Serpro: Acesso ao SIAFI e SIASG.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Suite de Aplicativos Office - Libreoffice.<br/>
+
+				<h4>Estudo e Programação:</h4>
+					<input type="checkbox" name="Ok"> - Instalar scratch.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Visual Studio Code e as Extensões utilizadas<br/>
+					<input type="checkbox" name="Ok"> - Instalar Git e GitHub Desktop<br/>
+
+				<h4>Programas adicionais úteis:</h4>
+					<input type="checkbox" name="Ok"> - Instalar Media Player VLC: Bom para enviar videos para ChromeCast rapidamente.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Inkscape.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Fontes ttf-mscorefonts-installer.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Virtual Box.<br/>
+					<input type="checkbox" name="Ok"> - Instalar Gravador de Imagens em USB.<br/>
+					<input type="checkbox" name="Ok"> - Instalar programa de verificador de arquivos (Ver se já tem)- Ex.:GtkHash.<br/>
+					<input type="checkbox" name="Ok"> - Instalar CPU-X - Informações sobre o Hardware.<br/>
+
+				<h4>Ações Personalizadas no Gereciador de Arquivos - Thunar ou outro:</h4>
+					<input type="checkbox" name="Ok"> Converter pdf para png (empenhos) - Commando: pdftoppm %f -png %f.png<br/>
+					<input type="checkbox" name="Ok"> Abrir Terminal como Administrador - Commando: pkexec exo-open --working-directory %d --launch TerminalEmulator (Verificar comando certo)<br/><br>
+				</form>
+			</div>
+			<div>
+				<input type="button" onclick="alert('Suas respostas foram salvas!')" value="Salvar Respostas">
+				<input type="reset" value="Limpar Tudo"><br><br><br>
+				<input type="button" onclick="alert('Não conseguimos recuperar suas respotas no servidor, tente novamente em instantes!')" value="Recuperar Respostas">
+			</div>
+
+			<div id="push"></div>
+
+		</section>
+
+		
+		<footer>
+			<div id="rodape-centro">
+			  <p id="rodape-frase">O conhecimento é a base que faz com que nós possamos construir toda nossa vida, pois permite que possamos planejar melhor, decidir melhor, descobrir novos caminhos.<br/><em>Sempre siga em frente, <strong>nunca pare de conhecer o desconhecido!</strong></em></h3>
+			  <p id="rodape-nome">By Rafa Bruno Enteprise! ATENÇÃO: Site de Teste - Nem todas as funcionalidades realmente funcionam!</p>
+			</div>
+		</footer>
+
+	</body>
+</html>>

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+html{
+    margin: 10px;
+}
+body{
+    background-color: #cccccc;
+    margin: 0px;
+}
+header{
+    display: table;
+    width: 100%;
+}
+div#sessaotitulo{
+    border-bottom: 5px solid #777777;
+    border-top: 5px solid #777777;
+    border-radius: 50px;
+    background-color: #99bbbb;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 150px;
+}
+h1{
+    font-family: ubuntu;
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    color:#ffffff;
+    text-shadow: 0px 0px 4px #000000;
+    transition: text-shadow 2s, color 1.5s 0.5s;
+    padding: 0px;
+    margin: 0px;
+}
+h1:hover {
+    text-shadow: 0px 0px 10px #ffffff;
+    color: #000000;
+}
+h2{
+    font-family: ubuntu;
+    font-size: 25px;
+    color:#ffffff;
+    text-shadow: 0px 0px 4px #000000;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+ul#menu{
+    margin: auto 0px 2px 30px;
+    padding: 0px;
+    display: inline-flex;
+    align-content: center;
+}
+ul#menu li{
+    border-bottom: 5px solid #777777;
+    border-top: 5px solid #777777;
+    border-radius: 50px;
+    background-color: #99bbbb;
+    margin: 4px 2px 4px 2px;
+    list-style: none;
+    padding: 2px 10px 2px 10px;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+}
+ul#menu li:hover{
+    border-bottom: 5px solid #ffffff;
+    border-top: 5px solid #ffffff;
+}
+a{
+    font-family: ubuntu;
+    color: currentColor;
+    text-decoration: none;
+}
+h3{
+    font-family: ubuntu;
+    font-size: 22px;
+    color:#000000;
+}
+h4{
+    font-family: ubuntu;
+    font-size: 18px;
+}
+section#conteudo{
+    min-height: 100%;
+    padding: 20px;
+    margin: 0px 30px 0px 30px;
+    background-color: #99bbbb;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+div#push{
+    height: 65px
+}
+#rodape-centro{
+    background-color: #cccccc;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    border: 2px solid #777777;
+    border-radius: 40px;
+    text-align: center;
+}
+p#rodape-frase{
+    font-family:arial;
+    font-size: 14px;
+    color:#181818;
+    border-bottom: 2px solid #777777;
+    margin: 0px;
+    height: 40px;
+    text-align: center;
+}
+p#rodape-nome{
+    font-family:arial;
+    font-size: 12px;
+    color:#181818;
+    margin: 0px;
+    height: 25px;
+    text-align: center;
+}
+footer{
+    background-color: rgba(0,0,0,0);
+    margin: 0 auto;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
